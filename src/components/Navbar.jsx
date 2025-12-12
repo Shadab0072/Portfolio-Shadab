@@ -161,8 +161,17 @@ const Navbar = () => {
                   <X size={24} />
                 </button>
               </div>
-              <div className="flex flex-col h-full overflow-hidden">
-                <nav className="flex-1 flex flex-col gap-1 px-3 py-4">
+              <div className="flex flex-col h-full">
+                <nav className="flex flex-col gap-2 px-3 py-5">
+                  <a
+                    href="https://drive.google.com/file/d/1YxtYeORtatLdRDDOrQhFbIK4YxDRaaUl/view?usp=drive_link"
+                    className="block w-full text-center rounded-md bg-[#49de80] px-4 py-2 text-[16px] font-semibold text-black shadow-sm hover:brightness-95 hover:shadow-lg hover:bg-[#3fd173] active:translate-y-0 active:shadow-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#4ADE80]"
+                    onClick={() => setIsOpen(false)}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Resume
+                  </a>
                   {[
                     { label: 'Home', href: '#' },
                     { label: 'About', href: '#about' },
@@ -180,17 +189,6 @@ const Navbar = () => {
                     </a>
                   ))}
                 </nav>
-                <div className="p-3 border-t border-[#1f2937]">
-                  <a
-                    href="https://drive.google.com/file/d/1YxtYeORtatLdRDDOrQhFbIK4YxDRaaUl/view?usp=drive_link"
-                    className="block w-full text-center rounded-md bg-[#49de80] px-4 py-2 text-[16px] font-semibold text-black shadow-sm hover:brightness-95 hover:shadow-lg hover:bg-[#3fd173] active:translate-y-0 active:shadow-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#4ADE80]"
-                    onClick={() => setIsOpen(false)}
-                    target="_blank"
-                          rel="noreferrer"
-                  >
-                    Resume
-                  </a>
-                </div>
               </div>
             </motion.aside>
           </>
