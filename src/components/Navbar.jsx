@@ -147,7 +147,7 @@ const Navbar = () => {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ duration: 0.2 }}
-              className="fixed top-0 right-0 h-screen w-72 max-w-[85vw] bg-[#111826] md:hidden z-50 border-l border-[#1f2937] shadow-xl"
+              className="fixed top-0 right-0 h-screen w-72 max-w-[85vw] bg-[#111826] md:hidden z-50 border-l border-[#1f2937] shadow-xl flex flex-col"
               role="dialog"
               aria-modal="true"
             >
@@ -161,8 +161,8 @@ const Navbar = () => {
                   <X size={24} />
                 </button>
               </div>
-              <div className="flex flex-col h-[calc(100vh-80px)] overflow-y-auto">
-                <nav className="flex-1 px-3 py-4 space-y-1">
+              <div className="flex flex-col h-full overflow-hidden">
+                <nav className="flex-1 flex flex-col gap-1 px-3 py-4">
                   {[
                     { label: 'Home', href: '#' },
                     { label: 'About', href: '#about' },
